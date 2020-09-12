@@ -40,6 +40,7 @@ for time=1:timestep
             end
         else
             dummyPr=zeros(r/2,1);
+            dummyPr2=zeros(r/2,1);
             m=(r/2)+1;
             for idx=1:r/2
                 dummyPr(idx)=nchoosek(r,m)*power(probA_T(time),m)*power(1-probA_T(time),r-m);
